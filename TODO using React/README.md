@@ -1,3 +1,4 @@
-This Mini-Proect is a TODO App
-It is build using React.js
-it also has mark as done feature in it
+This mini Project is a TODO App 
+This is build using React.js
+It also have mark as done feature in it
+
