@@ -1,0 +1,10 @@
+.InfoBox{
+    text-align: center;
+}
+.CardHolder{
+    display: flex;
+    justify-content: center;
+}
+.Content{
+    background-color: lightcyan;
+}
