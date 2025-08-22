@@ -1,3 +1,6 @@
+import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
+import SunnyIcon from '@mui/icons-material/Sunny';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -29,7 +32,13 @@ export default function InfoBox({info}){
       />
       <CardContent className='Content'>
         <Typography gutterBottom variant="h5" component="div">
-          {info.city}
+          {info.city} {info.humidity >80 
+          ? <ThunderstormIcon/>:
+          info.temp>15 ?
+          <SunnyIcon/>
+          : <AcUnitIcon/>
+          }
+          
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
         <p>Temperature : {info.temp}<br/>
